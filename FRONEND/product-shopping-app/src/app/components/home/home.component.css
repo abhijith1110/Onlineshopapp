@@ -1,0 +1,109 @@
+.hero-section 
+{
+  background-position: center;
+  color:#ffffff;
+  text-align:center;
+  padding:100px 20px;
+
+}
+
+.hero-section h1
+{
+   font-size: 48px;
+   margin-bottom: 20px;
+}
+
+
+.hero-section p 
+{
+    font-size: 24px;
+    margin-bottom:40px;
+}
+
+
+
+.cta-button 
+{
+     display:inline-block;
+     padding:10px 20px;
+     font-size:18px;
+     background-color: #ff6600;
+     color:#ffffff;
+     text-decoration:none;
+     border-radius: 5px;
+     transition:background-color 0.3s;
+}
+
+.cta-button:hover
+{
+    background-color:#e65500;
+
+}
+
+.featured-products 
+{
+    padding: 50px 20px;
+    text-align:center;
+}
+
+.featured-products h2
+{
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/*About Section*/
+
+.about-section
+{
+    background-color: #f9f9f9;
+    padding:50px 20px;
+    text-align:center;
+}
+
+.about-section h2
+{
+   font-size:36px;
+   margin-bottom: 20px;
+
+}
+
+
+.about-section p{
+    font-size:18px;
+}
+
+.carousel-containers
+{
+    position:relative;
+    max-width:100%;
+    overflow:hidden;
+
+}
+
+
+.carousel-image 
+{
+    width:100%;
+    height: auto;
+}
+
+.carousel-indicators
+{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+
+.carousel-indicators button 
+{
+    background-color:#fff;
+    border:1px solid #333;
+    width:12px;
+    height:12px;
+    border-radius: 50%;
+    margin:0 5px;
+    cursor:pointer;
+}

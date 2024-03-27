@@ -1,0 +1,38 @@
+<!-- <app-register></app-register> -->
+ 
+<div class="app-container">
+   <app-header></app-header>
+ <div class = "content" *ngIf = "showProductList">
+     <!--Button to toggle registration/login component-->
+    <!-- <app-products-list *ngIf ="!showRegistration && !showLogin"></app-products-list> -->
+    <!-- <app-register *ngIf="showRegistration"></app-register>
+    <app-login *ngIf="showLogin"></app-login> -->
+    <!-- <app-products-list></app-products-list>
+      -->
+    <router-outlet></router-outlet>
+</div>
+
+<!-- <div class="auth-buttons-container">
+    <button mat-class class ="register-button" (click) = "toggleRegistration()">
+        <span>Register</span>
+        <mat-icon>person_add</mat-icon>
+    </button>
+    <button mat-class class = "login-button" (click) = "toggleLogin()">
+         <span>Login</span>
+         <mat-icon>Login</mat-icon>
+    </button>
+</div> -->
+
+<div *ngIf="showRegistration">
+   <!--Display registration/login component-->
+   <app-register></app-register>
+   
+</div>
+
+<div *ngIf="showLogin">
+    <app-login></app-login>
+</div>
+  
+<router-outlet></router-outlet>
+</div>
+<!--  -->

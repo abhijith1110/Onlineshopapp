@@ -1,0 +1,8 @@
+<div *ngIf="product" class = "product-container">
+  <h2>{{product.product_name}}</h2>
+  <p>{{product.product_desc}}</p>
+  <p>Price:{{product.product_price}}</p>
+  <img [src] = "product.product_img" alt = "Product Image" class = "product-image">
+  <button (click)="addToCart(product.product_id,quantity)">Add to Cart</button>
+  <!-- <p *ngIf = "!isLoggedIn()"> Please log in to add this to the cart.</p> -->
+</div>

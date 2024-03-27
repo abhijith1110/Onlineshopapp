@@ -1,0 +1,29 @@
+
+
+<body class="login-background">
+    <mat-card class="login-card">
+    <mat-card-header>
+        <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+    <form class = "login-form" [formGroup] = "loginForm" (ngSubmit)="login()">
+        <mat-form-field appearance = "outline">
+            <mat-label>Email Address:</mat-label>
+            <input matInput formControlName="email" required>
+        </mat-form-field>
+        <mat-form-field appearance = "outline">
+            <mat-label>Password</mat-label>
+            <input matInput formControlName ="password"  type="password" required>
+            
+        </mat-form-field>
+        <div class = "remember-me">
+             <mat-checkbox>Remember Me</mat-checkbox>
+        </div>
+        <button mat-raised-button color="primary" type="submit">Login</button>
+    </form>
+  <mat-card-actions class = "register-link">
+     <a  routerLink = "/register">Don't have an account?Register</a>
+ 
+  </mat-card-actions>
+  <p *ngIf = "loginError" class="error">{{loginError}}</p>
+</mat-card>
+</body>

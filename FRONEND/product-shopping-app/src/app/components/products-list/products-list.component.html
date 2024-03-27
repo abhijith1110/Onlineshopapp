@@ -1,0 +1,50 @@
+<div class="product-list-container" *ngIf = "showProductList">
+   <!--Regiter and Login Buttons-->
+   <!-- <div class="auth-buttons">
+        <button mat-button class = "register-button" routerLink="/register">Register</button>
+        <button mat-button class = "login-button" routerLink="/login">Login</button>
+   </div> -->
+
+   <!-- <div class="auth-buttons-container">
+     <button mat-class class ="register-button" (click) = "toggleRegistration()">
+         <span>Register</span>
+         <mat-icon>person_add</mat-icon>
+     </button>
+     <button mat-class class = "login-button" (click) = "toggleLogin()">
+          <span>Login</span>
+          <mat-icon>Login</mat-icon>
+     </button>
+ </div> -->
+
+   <!--Header-->
+   <div class="header">
+       <h2>Our Products</h2>
+   </div>
+   <div class="product-card-container">
+
+   <!-- <div class="product-card-row"> -->
+     <div class = "product-card" *ngFor = "let product of products">
+         <mat-card-header>
+             <mat-card-title>{{product.product_name}}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+                 <img class = "product-image" [src]="product.product_img" alt = "Product Image" >
+                 <!-- <p>{{product.product_desc}}</p> -->
+                 <div class="price-and-button">
+                      <span class = "product_price">₹{{product.product_price}}</span>
+                      <button mat-button class = "btn-go-to-product" (click)="viewProductDetails(product.product_id)">View Details</button>
+                 </div>
+           </mat-card-content>
+      
+       <!-- <h3 class="product_name">{{product.product_name}}</h3>
+       <h3 class="product_desc">{{product.product_desc}}</h3>
+       <h3 class="product_price">Price:{{product.product_price}}</h3>
+       <button class = "btn-add-to-cart">Add to Cart</button> -->
+     </div>
+     </div>
+    </div>
+<!-- </div> -->
+
+<!--PRODUCT CARDS-->
+
+  

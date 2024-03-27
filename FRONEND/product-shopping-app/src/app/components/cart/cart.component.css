@@ -1,0 +1,179 @@
+.cart-container
+{
+    /* width:100%;
+    max-width: 800px;
+    margin: 0 auto; */
+    margin: 20px;
+    padding:20px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9; 
+    /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+}
+
+.cart-container h2
+{
+    font-size:24px;
+    margin-bottom: 20px;
+}
+
+.cart-items
+{
+    /* list-style-type: none;
+    padding: 0; */
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 10px;
+}
+
+
+.cart-item
+{
+    background-color: #fff;
+    border:1px solid #ddd;
+    border-radius:5px;
+    padding:10px;
+    display:flex;
+}
+
+
+.cart-item-details 
+{
+    /* display:flex;
+    justify-content: space-between;
+    align-items:center; */
+     display:flex;
+     flex-direction:column;
+     flex-grow: 1;
+}
+/* .cart-items li 
+{
+    display:flex;
+    align-items: center;
+    padding:15px;
+    border-bottom:1px solid #eee;
+} */
+
+
+.cart-items-details div 
+{
+    margin-bottom: 5px;
+
+}
+
+
+
+.cart-item-details div
+{
+    margin-bottom: 5px;
+}
+
+
+.cart-item-details label 
+
+{
+
+    font-weight:bold;
+}
+
+.cart-item-details .quantity-input
+{
+    display:flex;
+    align-items:center;
+}
+.cart-item-details input 
+{
+    width: 50px;
+
+}
+.cart-total
+{
+    margin-top:20px;
+    text-align: right;
+}
+
+
+.empty-cart 
+{
+    text-align:center;
+    padding:20px;
+    font-size:1.2rem;
+}
+
+
+button
+{
+    padding:8px 15px;
+    background-color: #007bff;
+    color:White;
+    border:none;
+    cursor:pointer;
+    transition: background-color 0.3s;
+
+}
+
+button:hover
+{
+    background-color: #0056b3;
+}
+
+.remove-button
+{
+    background-color: #dc3545;
+    color:white;
+    border:none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.remove-button:hover
+{
+    background-color: #d32f32;
+}
+
+.product-name
+ {
+    font-weight:bold;
+    font-size: 1.2em;
+    color: #333;
+    text-transform: uppercase;
+ }
+
+
+ .cart-total button 
+ {
+    background-color: #007bff;
+    color:#fff;
+    border:none;
+    border-radius:3px;
+    padding:5px 10px;
+    cursor:pointer;
+
+ }
+
+
+ .cart-item-details .quantity-input input
+ {
+    width:50px;
+    margin-left: 5px;
+    padding: 5px;
+ }
+
+
+ .cart-item-details .remove-button {
+
+    background-color: #dc3545;
+    color: #fff;
+    border:none;
+    border-radius: 3px;
+    padding:5px 10px;
+    cursor: pointer;
+
+ }
+
+
+ .cart-item-details .remove-button:hover 
+
+ {
+    background-color: #c82333;
+ }

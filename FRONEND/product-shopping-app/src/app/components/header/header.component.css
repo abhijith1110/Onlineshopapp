@@ -1,0 +1,102 @@
+.header
+{
+    background-color:#333;
+    color:White;
+    padding:10px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo img
+{
+    height:40px;
+}
+
+nav ul
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+nav ul li
+{
+    display:inline-block;
+    margin-right: 20px;
+
+}
+
+
+nav ul li a
+{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    text-transform:uppercase;
+    transition:color 0.3s;
+
+}
+
+
+nav ul li a:hover 
+{
+    color:#ffd700;
+}
+
+
+.search-bar
+{
+    display:flex;
+    align-items:center;
+}
+
+
+.search-bar input[type="text"]
+{
+    padding:8px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border:1px solid #ccc;
+}
+
+
+.search-bar button 
+{
+    padding:8px 15px;
+    background-color: #ffd700;
+    color:#333;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.user-profile
+{
+    display:flex;
+    align-items:center;
+}
+
+
+.user-profile a 
+{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+    text-transform: uppercase;
+    transition:color 0.3s;
+}
+
+.user-profile a:hover
+{
+    color:#ffd700;
+}
+
+.cart-icon 
+{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    color:inherit;
+}
